@@ -4,10 +4,10 @@ var player, shooterImg, shooter_shooting;
 
 function preload(){
   
-  shooterImg = loadImage("assets/shooter_2.png")
-  shooter_shooting = loadImage("assets/shooter_3.png")
+  shooterImg = loadImage("shooter_2.png")
+  shooter_shooting = loadImage("shooter_3.png")
 
-  bgImg = loadImage("assets/bg.jpeg")
+  bgImg = loadImage("bg.jpeg")
 
 }
 
@@ -26,7 +26,7 @@ bg.scale = 1.1
 player = createSprite(displayWidth-1150, displayHeight-300, 50, 50);
  player.addImage(shooterImg)
    player.scale = 0.3
-   player.debug = false
+   player.debug = true
    player.setCollider("rectangle",0,0,300,300)
 
 
